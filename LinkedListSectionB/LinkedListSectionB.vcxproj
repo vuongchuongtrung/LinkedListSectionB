@@ -115,6 +115,9 @@
     <ClInclude Include="ListOfEmployee.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="EmployeeListNode.cpp" />
+    <ClCompile Include="ListOfEmployee.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
