@@ -1,6 +1,5 @@
 #include "ListOfEmployee.h"
 
-
 int main()
 {
 	ListOfEmployee list;	
@@ -22,8 +21,8 @@ int main()
 	//list.display();
 
 	// could also passed in: true | false
-	list.display(1); // true  ==> sort by name
 	list.display(0); // false ==> sort by salary
+	list.display(1); // true  ==> sort by name
 
 	list.getSalary("Sharon");
 

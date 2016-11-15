@@ -10,6 +10,7 @@ struct Employee
 	friend class ListOfEmployee;
 public:
 	Employee();
+	Employee(string nameIn, double salaryIn);
 		
 private:
 	string name;

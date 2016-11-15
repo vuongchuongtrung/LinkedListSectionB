@@ -1,9 +1,7 @@
 ﻿  main.cpp
-  EmployeeListNode.cpp
-  Employee.cpp
-  Generating Code...
-  Compiling...
   ListOfEmployee.cpp
   Generating Code...
-  LinkedListSectionB.vcxproj -> D:\ITT\X00123743\Semester5\ADS1\Lab06_LinkedList\LinkedListSectionB\Debug\LinkedListSectionB.exe
-  LinkedListSectionB.vcxproj -> D:\ITT\X00123743\Semester5\ADS1\Lab06_LinkedList\LinkedListSectionB\Debug\LinkedListSectionB.pdb (Partial PDB)
+  Skipping... (no relevant changes detected)
+  EmployeeListNode.cpp
+  LinkedListSectionB.vcxproj -> E:\ITT\X00123743\Semester5\ADS1\Lab06_LinkedList\LinkedListSectionB\Debug\LinkedListSectionB.exe
+  LinkedListSectionB.vcxproj -> E:\ITT\X00123743\Semester5\ADS1\Lab06_LinkedList\LinkedListSectionB\Debug\LinkedListSectionB.pdb (Partial PDB)
