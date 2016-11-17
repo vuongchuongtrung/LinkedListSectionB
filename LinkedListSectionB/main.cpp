@@ -13,6 +13,7 @@ int main()
 	list.display();
 
 	list.deleteMostRecent(); // Paul
+	list.getSalary("Paul");
 
 	//list.sortByName();
 	//list.display();

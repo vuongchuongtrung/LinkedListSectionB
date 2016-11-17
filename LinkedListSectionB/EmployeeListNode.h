@@ -7,6 +7,7 @@ class EmployeeListNode
 {
 	friend class ListOfEmployee;
 public:
+	EmployeeListNode();
 	EmployeeListNode(string nameIn, double salaryIn);		
 
 private:

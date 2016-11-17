@@ -15,7 +15,11 @@ public:
 	void displayMessage(string message);
 	string horizontalLine();
 	void display();
-	void display(int sortValue); // any un-zero numbers ==> sort by name || 0 ==> sort by salary
+
+	// any un-zero numbers ==> sort by name || 0 ==> sort by salary
+	// I just simply want to practice this, rather than pass in the real boolean type
+	void display(int sortValue); 
+	
 	void deleteMostRecent();
 	double getSalary(string nameIn);
 	void sortByName();

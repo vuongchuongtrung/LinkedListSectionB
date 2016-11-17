@@ -160,6 +160,7 @@ double ListOfEmployee::getSalary(string nameIn)
 	// thousand separator for number ==> e.g.: 35,000
 	cout.imbue(locale(""));
 
+	bool isFound = false;
 	double salary = 0;
 	EmployeeListNode *currentNode = head;
 	while (currentNode != NULL)
@@ -167,10 +168,17 @@ double ListOfEmployee::getSalary(string nameIn)
 		if (currentNode->emp.name == nameIn)
 		{
 			salary = currentNode->emp.salary;
+			cout << nameIn << " salary is: " << setprecision(0) << fixed << salary << "\n" << endl;
+			isFound = true;
 		}
 		currentNode = currentNode->next;
 	}
-	cout << nameIn << " salary is: " << setprecision(0) << fixed << salary << "\n" << endl;
+	if (!isFound) // if not found
+	{
+		setColor(12);
+		cout << nameIn << " could NOT be found in the list!\n" << endl;
+		setColor(7);
+	}	
 	return salary;
 }
 
