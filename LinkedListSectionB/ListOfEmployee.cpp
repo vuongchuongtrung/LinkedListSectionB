@@ -163,22 +163,34 @@ double ListOfEmployee::getSalary(string nameIn)
 	bool isFound = false;
 	double salary = 0;
 	EmployeeListNode *currentNode = head;
-	while (currentNode != NULL)
-	{
-		if (currentNode->emp.name == nameIn)
-		{
-			salary = currentNode->emp.salary;
-			cout << nameIn << " salary is: " << setprecision(0) << fixed << salary << "\n" << endl;
-			isFound = true;
-		}
-		currentNode = currentNode->next;
-	}
-	if (!isFound) // if not found
+
+	if (!head)
 	{
 		setColor(12);
-		cout << nameIn << " could NOT be found in the list!\n" << endl;
+		cout << "The list is empty!\n" << endl;
 		setColor(7);
-	}	
+	}
+	else
+	{
+		while (currentNode != NULL)
+		{
+			if (currentNode->emp.name == nameIn)
+			{
+				salary = currentNode->emp.salary;
+				cout << nameIn << " salary is: " << setprecision(0) << fixed << salary << "\n" << endl;
+				isFound = true;
+			}
+			currentNode = currentNode->next;
+		}
+		if (!isFound) // if not found
+		{
+			setColor(12);
+			cout << nameIn << " could NOT be found in the list!\n" << endl;
+			setColor(7);
+			// the code below worked
+			//displayWarningMessage(cout, nameIn + " could NOT be found in the list!\n");
+		}
+	}
 	return salary;
 }
 
@@ -257,4 +269,11 @@ void ListOfEmployee::sortBySalary()
 void ListOfEmployee::setColor(int colorValue)
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), colorValue);
+}
+
+void ListOfEmployee::displayWarningMessage(ostream &str, string message)
+{
+	setColor(12);
+	str << message << endl;
+	setColor(7);
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include "EmployeeListNode.h"
 
+#include <ostream>
 #include <string>
 using namespace std;
 
@@ -25,6 +26,7 @@ public:
 	void sortByName();
 	void sortBySalary();
 	void setColor(int colorValue);
+	void displayWarningMessage(ostream &str, string message);
 
 private:
 	EmployeeListNode *head;
